@@ -15,7 +15,7 @@ function CountiesList() {
   return (
     <>
       <div className="row">
-        <div className="col p-6 bg-primary text-white">Countreis</div>
+        <div className="col p-6 colorbg text-white">Countreis</div>
       </div>
       <div className="row">
         {countries?.map((country, index) => (
@@ -23,7 +23,7 @@ function CountiesList() {
             index={index}
             key={country.cca3}
             id={country.cca3}
-            name={country.name}
+            name={country.name.common}
             capital={country.capital}
             population={country.population}
           />

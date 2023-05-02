@@ -12,7 +12,7 @@ const formatCountries = (res) => res.data.map(({
 }) => ({
   cca3,
   name,
-  capital,
+  capital: Array.isArray(capital) ? capital[0] || '' : capital || '',
   population,
 }));
 

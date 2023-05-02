@@ -4,11 +4,14 @@ import '../../assets/country.css';
 
 function Country(props) {
   const { name, capital, population } = props;
+  const capitalString = Array.isArray(capital) ? capital.join(', ') : capital;
+
+  console.log('capitalString', capital);
   return (
     <>
-      <div className="col-6 p-3 bg-primary text-white">
-        <div>{name.common}</div>
-        <div>{capital}</div>
+      <div className="col-6 p-3 colorbg text-white">
+        <div>{name}</div>
+        <div>{capitalString}</div>
         <div>{population}</div>
       </div>
     </>
@@ -17,8 +20,11 @@ function Country(props) {
 
 Country.propTypes = {
   name: PropTypes.string.isRequired,
-  capital: PropTypes.string.isRequired,
-  population: PropTypes.string.isRequired,
+  capital: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.arrayOf(PropTypes.string),
+  ]).isRequired,
+  population: PropTypes.number.isRequired,
 };
 
 export default Country;

@@ -1,0 +1,22 @@
+.navbar {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+}
+
+.navbar-nav .nav-link i {
+  font-size: 1.5rem;
+}
+
+.navbar-nav .nav-item.active .nav-link {
+  color: #007bff;
+}

@@ -5,14 +5,18 @@ import '../../assets/country.css';
 function Country(props) {
   const { name, capital, population } = props;
   const capitalString = Array.isArray(capital) ? capital.join(', ') : capital;
-
-  console.log('capitalString', capital);
   return (
     <>
       <div className="col-6 p-3 colorbg text-white">
         <div>{name}</div>
-        <div>{capitalString}</div>
-        <div>{population}</div>
+        <div>
+          <span>Capital: </span>
+          {capitalString}
+        </div>
+        <div>
+          <span>Population: </span>
+          {population}
+        </div>
       </div>
     </>
   );

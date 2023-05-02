@@ -11,7 +11,7 @@ function CountiesList() {
     if (countries.length === 0) {
       dispatch(getCountries());
     }
-  }, [dispatch, countries]);
+  }, []);
   return (
     <>
       <div className="row">

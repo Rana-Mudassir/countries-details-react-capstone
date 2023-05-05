@@ -1,14 +1,13 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import axios from 'axios';
 
-const BackendUrl = 'https://restcountries.com/v3.1';
+export const BackendUrl = 'https://restcountries.com/v3.1';
 
 const initialState = {
   countries: [],
   country: [],
 };
 
-const formatCountries = (res) => res.data.map(({
+export const formatCountries = (res) => res.data.map(({
   cca3, name, capital, population,
 }) => ({
   cca3,
@@ -18,8 +17,9 @@ const formatCountries = (res) => res.data.map(({
 }));
 
 export const getCountries = createAsyncThunk('get/countries', async () => {
-  const res = await axios.get(`${BackendUrl}/all`);
-  return formatCountries(res);
+  const res = await fetch(`${BackendUrl}/all`);
+  const data = await res.json();
+  return formatCountries({ data });
 });
 
 const formatCountry = (res) => res.data.map(({
@@ -35,14 +35,15 @@ const formatCountry = (res) => res.data.map(({
   unMember,
   currencies: Object.keys(currencies)[0],
   independent,
-  region,
+  region: Array.isArray(region) ? region[0] || '' : region || '',
   languages: Object.values(languages)[0],
   area,
 }));
 
 export const getCountry = createAsyncThunk('get/country', async (id) => {
-  const res = await axios.get(`${BackendUrl}/alpha/${id}`);
-  return formatCountry(res);
+  const res = await fetch(`${BackendUrl}/alpha/${id}`);
+  const data = await res.json();
+  return formatCountry({ data });
 });
 
 const countriesSlice = createSlice({

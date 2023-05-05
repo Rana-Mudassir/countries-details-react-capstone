@@ -10,7 +10,7 @@
 .navbar-brand {
   font-size: 1.5rem;
   color: white;
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .nav-link {
@@ -35,11 +35,12 @@
   color: white;
 }
 
-.fa-microphone:before {
+.fa-microphone::before {
   color: white;
 }
 
-.fa-cog:before, .fa-gear:before {
+.fa-cog::before,
+.fa-gear::before {
   color: white;
 }
 
@@ -77,12 +78,12 @@
     display: flex !important;
     flex-direction: row;
   }
-  
-  ul{
-    overflow:hidden;
-    }
-    li{
-    display:inline-block;
-    }
-    
+
+  ul {
+    overflow: hidden;
+  }
+
+  li {
+    display: inline-block;
+  }
 }

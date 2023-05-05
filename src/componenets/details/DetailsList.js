@@ -8,7 +8,7 @@ import '../../assets/detailsList.css';
 function DetailsList() {
   const { id } = useParams();
   const dispatch = useDispatch();
-  const { country } = useSelector((store) => store.country);
+  const country = useSelector((store) => store.country.country);
   useEffect(() => {
     if (id) {
       dispatch(getCountry(id));

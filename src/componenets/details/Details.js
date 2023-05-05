@@ -51,7 +51,7 @@ function Details(props) {
           </tr>
           <tr>
             <td>Independent</td>
-            <td>{independent}</td>
+            <td>{independent || 'N/A'}</td>
           </tr>
           <tr>
             <td>Area</td>

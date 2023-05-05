@@ -23,6 +23,6 @@ body {
 
 @media (max-width: 767px) {
   #paddingMobile {
-    padding: 1rem!important;
+    padding: 1rem !important;
   }
 }

@@ -1,4 +1,13 @@
+# Countries of Worls 
 <a name="readme-top"></a>
+
+<div align="center">
+  
+  <br/>
+
+  <h3><b>Population Metrics country wise React Casptone Project</b></h3>
+
+</div>
 
 # 📗 Table of Contents
 
@@ -27,9 +36,11 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Space Travelers' Hub <a name="about-project"></a>
+# 📖 Countries of Worls  <a name="about-project"></a>
 
-**Space Travelers' Hub** is a website to implement as follows:
+**Countries of Worls** is a Mobile Webapp Project which is fetching  data through Rest Countries API and displaying them on the app pages. User can click on the available city metrics and can see the details on the details page. 
+
+**Countries of Worls** is a website to implement as follows:
 
 - Use React documentation
 - Use React components
@@ -83,7 +94,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd your-folder
-  git clone https://github.com/sawmon71293/react-group-project.git
+  git clone https://github.com/Rana-Mudassir/countries-details-react-capstone.git
 ```
 
 ### Install
@@ -108,11 +119,13 @@ You can deploy this project using:
 
 - npm test
 
-<!-- AUTHORS -->
 
-### Live <a name="live"></a>
+## 🚀 Live Demo <a name="live-demo"> </a>
 
-- This page is yet to be deployed
+- [Live Demo]()
+
+- [Video Presentation]()
+
 
 ## 👥 Authors <a name="authors"></a>
 
@@ -122,16 +135,11 @@ You can deploy this project using:
 - Facebook: [@Facebook](https://www.facebook.com/rana.mudasir.142)
 - LinkedIn: [@LinkedIn](https://www.linkedin.com/in/rana-mudassir-nazir-03541114a/)
 
-👤 **Saw Mon Han**
-
-- GitHub: [@sawmon](https://github.com/sawmon71293)
-- Twitter: [@Twitterhandle](https://twitter.com/sawmonhan)
-- LinkedIn: [@LinkedIn](https://www.linkedin.com/in/saw-mon-han/)
-
 ## 🔭 Future Features <a name="features"></a>
 
-- Add more functionalities
+- Adding Countries Map
 - Update UI
+- Integration with other environmental data
 
 <!-- CONTRIBUTING -->
 
@@ -155,7 +163,7 @@ If you like this project, please consider a star on GitHub!
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse for the opportunity to dream big.
+I would like to thanks Behance for their design contributions to this project. Special thanks to the author of the design [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio) for his wonderful design creation.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

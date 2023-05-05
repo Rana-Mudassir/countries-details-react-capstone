@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+Array [
+  <div
+    className="row"
+    style={
+      Object {
+        "margin": "auto",
+      }
+    }
+  >
+    <div
+      className="container text-white"
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+        }
+      }
+    >
+      <h1
+        style={
+          Object {
+            "marginRight": "20px",
+            "padding": "20px",
+          }
+        }
+      />
+      <img
+        alt="Country flag"
+        style={
+          Object {
+            "marginLeft": "auto",
+            "padding": "20px",
+          }
+        }
+      />
+    </div>
+  </div>,
+  <table
+    className="table table-striped text-white"
+  >
+    <tbody>
+      <tr>
+        <td>
+          Official Name
+        </td>
+        <td />
+      </tr>
+      <tr>
+        <td>
+          Region
+        </td>
+        <td />
+      </tr>
+      <tr>
+        <td>
+          Population
+        </td>
+        <td />
+      </tr>
+      <tr>
+        <td>
+          Language
+        </td>
+        <td />
+      </tr>
+      <tr>
+        <td>
+          United Nations Member
+        </td>
+        <td />
+      </tr>
+      <tr>
+        <td>
+          Currencies
+        </td>
+        <td />
+      </tr>
+      <tr>
+        <td>
+          Independent
+        </td>
+        <td>
+          N/A
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Area
+        </td>
+        <td>
+          <span>
+              Square Kilometer
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>,
+]
+`;

@@ -26,3 +26,11 @@ li {
   margin: auto;
   font-size: 3.5rem;
 }
+
+.searchBar {
+  display: flex;
+  justify-content: end;
+  padding-right: 30px;
+  padding-top: 20px;
+  border-radius: 8px;
+}

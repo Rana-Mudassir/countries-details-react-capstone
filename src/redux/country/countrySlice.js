@@ -42,7 +42,6 @@ const formatCountry = (res) => res.data.map(({
 
 export const getCountry = createAsyncThunk('get/country', async (id) => {
   const res = await axios.get(`${BackendUrl}/alpha/${id}`);
-  console.log('formatCountry(res)', formatCountry(res));
   return formatCountry(res);
 });
 

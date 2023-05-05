@@ -1,4 +1,4 @@
-# Countries of Worls 
+# Countries of Worlds 
 <a name="readme-top"></a>
 
 <div align="center">
@@ -36,11 +36,11 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Countries of Worls  <a name="about-project"></a>
+# 📖 Countries of Worlds  <a name="about-project"></a>
 
-**Countries of Worls** is a Mobile Webapp Project which is fetching  data through Rest Countries API and displaying them on the app pages. User can click on the available city metrics and can see the details on the details page. 
+**Countries of Worlds** is a Mobile Webapp Project which is fetching  data through Rest Countries API and displaying them on the app pages. User can click on the available city metrics and can see the details on the details page. 
 
-**Countries of Worls** is a website to implement as follows:
+**Countries of Worlds** is a website to implement as follows:
 
 - Use React documentation
 - Use React components

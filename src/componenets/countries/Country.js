@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import '../../assets/country.css';
 import { useNavigate } from 'react-router-dom';
+import next from '../../assets/images/next.png';
 
 function Country(props) {
   const navigate = useNavigate();
@@ -19,7 +20,7 @@ function Country(props) {
       <div
         role="button"
         tabIndex={0}
-        className="col-6 p-3 colorbg text-white"
+        className="col-6 p-5 colorbg text-white"
         onClick={getCountry}
         onKeyDown={(event) => {
           if (event.key === 'Enter' || event.key === ' ') {
@@ -27,15 +28,25 @@ function Country(props) {
           }
         }}
       >
-        <div>{name}</div>
-        <div>
-          <span>Capital: </span>
-          {capitalString}
+        <div className="spaceBetween">
+          <div>
+            <div><h2>{name}</h2></div>
+            <div>
+              <span>Capital: </span>
+              {capitalString}
+            </div>
+            <div>
+              <span>Population: </span>
+              {population}
+            </div>
+          </div>
+          <div>
+            <div className="icon-container">
+              <img src={next} alt="next" />
+            </div>
+          </div>
         </div>
-        <div>
-          <span>Population: </span>
-          {population}
-        </div>
+
       </div>
     </>
   );

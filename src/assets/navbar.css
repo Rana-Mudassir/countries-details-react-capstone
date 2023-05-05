@@ -3,10 +3,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #488cf2 !important;
+  color: white;
 }
 
 .navbar-brand {
   font-size: 1.5rem;
+  color: white;
+    font-weight: 700;
 }
 
 .nav-link {
@@ -18,5 +22,6 @@
 }
 
 .navbar-nav .nav-item.active .nav-link {
-  color: #007bff;
+  color: white;
+  font-weight: 700;
 }

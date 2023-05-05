@@ -9,20 +9,12 @@ const initialState = {
 };
 
 const formatCountries = (res) => res.data.map(({
-  cca3, name, capital, population, flags, official, unMember, currencies,
-  independent, region, languages,
+  cca3, name, capital, population,
 }) => ({
   cca3,
   name,
   capital: Array.isArray(capital) ? capital[0] || '' : capital || '',
   population,
-  flags,
-  official,
-  unMember,
-  currencies,
-  independent,
-  region,
-  languages,
 }));
 
 export const getCountries = createAsyncThunk('get/countries', async () => {
@@ -30,9 +22,28 @@ export const getCountries = createAsyncThunk('get/countries', async () => {
   return formatCountries(res);
 });
 
+const formatCountry = (res) => res.data.map(({
+  cca3, name, capital, population, flags, official, unMember, currencies,
+  independent, region, languages, area,
+}) => ({
+  cca3,
+  name,
+  capital: Array.isArray(capital) ? capital[0] || '' : capital || '',
+  population,
+  flags: Object.values(flags)[0],
+  official,
+  unMember,
+  currencies: Object.keys(currencies)[0],
+  independent,
+  region,
+  languages: Object.values(languages)[0],
+  area,
+}));
+
 export const getCountry = createAsyncThunk('get/country', async (id) => {
   const res = await axios.get(`${BackendUrl}/alpha/${id}`);
-  return formatCountries(res);
+  console.log('formatCountry(res)', formatCountry(res));
+  return formatCountry(res);
 });
 
 const countriesSlice = createSlice({

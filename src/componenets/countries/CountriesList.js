@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getCountries } from '../../redux/country/countrySlice';
 import Country from './Country';
-import '../../assets/country.css';
+import '../../assets/countriesList.css';
 
 function CountiesList() {
   const dispatch = useDispatch();
@@ -14,8 +14,15 @@ function CountiesList() {
   }, []);
   return (
     <>
+      {/* <div className="col p-1 px-5 m3 colorbg text-white">World Countreis Details</div>
+       */}
+      <div className="col m3 colorbg text-white text-center fs-4 fw-bold">
+        <h1 className="headingMain">
+          World Countries Details
+        </h1>
+      </div>
       <div className="row">
-        <div className="col p-6 colorbg text-white">Countreis</div>
+        <div className="col p-1 px-5 m3 colorbg text-white">Countreis Names</div>
       </div>
       <div className="row">
         {countries?.map((country, index) => (

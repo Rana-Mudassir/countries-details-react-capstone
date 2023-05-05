@@ -122,9 +122,9 @@ You can deploy this project using:
 
 ## 🚀 Live Demo <a name="live-demo"> </a>
 
-- [Live Demo]()
+- [Live Demo](https://fantastic-semolina-f4ebaf.netlify.app/)
 
-- [Video Presentation]()
+- [Video Presentation](https://drive.google.com/file/d/1fvKZ0wVdPLfB0qC7iWX1W00Zg_e-th9U/view?usp=share_link)
 
 
 ## 👥 Authors <a name="authors"></a>

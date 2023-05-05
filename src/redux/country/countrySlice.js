@@ -50,14 +50,14 @@ const countriesSlice = createSlice({
   initialState,
   reducers: {},
   extraReducers: (builder) => {
-    builder.addCase(getCountries.fulfilled, (state, action) => {
-      const State = state;
-      State.countries = action.payload;
-    });
-    builder.addCase(getCountry.fulfilled, (state, action) => {
-      const State = state;
-      State.country = action.payload;
-    });
+    builder.addCase(getCountries.fulfilled, (state, action) => ({
+      ...state,
+      countries: action.payload,
+    }));
+    builder.addCase(getCountry.fulfilled, (state, action) => ({
+      ...state,
+      country: action.payload,
+    }));
   },
 });
 

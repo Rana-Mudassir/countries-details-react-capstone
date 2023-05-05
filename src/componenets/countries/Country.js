@@ -21,6 +21,7 @@ function Country(props) {
         role="button"
         tabIndex={0}
         className="col-6 p-5 colorbg text-white"
+        id="paddingMobile"
         onClick={getCountry}
         onKeyDown={(event) => {
           if (event.key === 'Enter' || event.key === ' ') {

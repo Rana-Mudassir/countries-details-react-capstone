@@ -14,17 +14,21 @@ exports[`renders correctly 1`] = `
   >
     <div>
       <div>
-        <h2 />
+        <h2>
+          Test Country
+        </h2>
       </div>
       <div>
         <span>
           Capital: 
         </span>
+        Test Capital
       </div>
       <div>
         <span>
           Population: 
         </span>
+        1000000
       </div>
     </div>
     <div>

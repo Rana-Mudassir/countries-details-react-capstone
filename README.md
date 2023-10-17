@@ -38,7 +38,7 @@
 
 # 📖 Countries of Worlds  <a name="about-project"></a>
 
-**Countries of Worlds** is a Mobile Webapp Project which is fetching  data through Rest Countries API and displaying them on the app pages. User can click on the available city metrics and can see the details on the details page. 
+**Countries of Worlds** is a Responsive Webapp Project that fetches  data through Rest Countries API and displays them on the app pages. Users can click on the available city metrics and see the details on the details page. 
 
 **Countries of Worlds** is a website to implement as follows:
 
@@ -48,7 +48,7 @@
 - Use React Router
 - Connect React and Redux
 - Handle events in a React app
-- Write unit tests with React Testing Library
+- Write unit tests with the React Testing Library
 - Use styles in a React app
 - Use React hooks
 - Apply React best practices and language style guides in code
